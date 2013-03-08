@@ -1,0 +1,23 @@
+{
+    "name": "handlebars"
+  , "version": "0.0.1"
+  ,  "description": "Handlebars version of the express3-plates sample page."
+  ,   "main": "server.js"
+  ,   "dependencies": {
+        "handlebars": "1.0.10"
+      , "express": "3.1.0"
+      , "superagent": "0.12.4"
+    }
+  , "devDependencies": {
+      "coffee-script": "1.6.1"
+    , "nodemon": "0.7.2"
+  }
+  , "bundledDependencies": {
+      "consolidate": "0.8.0"
+  }
+  , "scripts": {
+      "start": "nodemon server.coffee"
+  }
+  , "author": "Aral Balkan <aral@aralbalkan.com>"
+  , "license": "BSD"
+}

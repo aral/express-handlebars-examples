@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <!-- Note: Bug in plates: If title tag already has text content it is not
+             ===== replaced regardless of whether you use .to(), .insert(), or .use() -->
+        <title>{{title}}</title>
+        <style type='text/css'>
+            body { max-width: 250px; margin: 0 auto; }
+            img { max-width:250px; }
+        </style>
+    </head>
+    <body>
+        <h1>{{title}}</h1>
+        <p>Hello from {{name}}!<p>
+
+        <p>{{content}}</p>
+
+        <p><a href='{{newURL}}'>This should link to Aral’s homepage.</a></p>
+
+        <p><a href='http://{{correctURLFragment}}.com'>This should link to the Modern iOS Development workshop.</a></p>
+
+        <p>This should be Aral’s headshot:</p>
+
+        <img src='{{aralImageURL}}'>
+
+        <h2>Friends and their skills</h2>
+
+        {{#if friends}}
+        <ul class='friends-list'>
+            {{#each friends}}
+            <li>
+                <p>{{name}} knows {{skills}}.</p>
+            </li>
+            {{/each}}
+        </ul>
+        {{else}}
+        <p class='no-friends-warning'>No friends found.</p>
+        {{/if}}
+
+    </body>
+</html>

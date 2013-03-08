@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset='utf-8'>
+	<title>App.net Global Timeline</title>
+	<meta name='viewport' content='width=device-width'>
+	<link rel='stylesheet' type='text/css' href='css/posts.css'>
+
+    <script type="text/javascript" src='js/autolink-adn-mentions-and-hashtags.js'></script>
+</head>
+<body>
+	<h1>App.net Global Timeline</h1>
+	<p>The latest {{data.length}} posts from <a href='http://join.app.net'>App.net</a>.</p>
+	<ul>
+		{{#if error}}
+			<li class='error'>{{errorType}} error: {{error}}.</li>
+		{{else}}
+			{{#each data}}
+			<li>
+				<img src='{{user.avatar_image.url}}' alt='{{user.name}}’s avatar'>
+
+				<p><a class='user' href='{{user.canonical_url}}'>{{user.name}}</a>
+
+				<span class='postText'>{{safe html}}</span></p>
+
+			</li>
+			{{/each}}
+		{{/if}}
+	</ul>
+</body>
+</html>

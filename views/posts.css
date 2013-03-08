@@ -1,0 +1,135 @@
+html
+{
+	padding: 0 48px;
+}
+
+body
+{
+	max-width: 768px;
+	line-height: 2;	/* 24px/16px */
+	font-family: 'Avenir Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin: 2.25em auto;
+	margin-bottom: 96px;
+	color: #404040;
+}
+
+h1
+{
+	font-size: 3.75em; /* 48px/16px */
+	font-weight: 500;
+	line-height: 1.333333333; /* 48px/36px */
+}
+
+a
+{
+	text-decoration: none;
+	word-wrap: break-word;
+	color: rgba(56,146,227,0.73);
+}
+
+ul
+{
+	margin-top: 2.25em; /* 36px/16px */
+	padding: 0;
+}
+
+li
+{
+	list-style-type: none;
+	margin-bottom: 1.5em; /* 24px/16px */
+	min-height: 6.25em; /* 100px/16px */
+	background-color: #eee;
+	padding: 0.75em; /* 12px/16px */
+
+	/* Let’s make sure long uninterrupted text doesn’t break our design */
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+li img
+{
+	float: left;
+	margin-right: 1.5em; /* 36px/16px */
+	width: 6.25em; /* 100px/16px */
+	height: 6.25em; /* 100px/16px */
+	border: 1px solid #252525;
+}
+
+p
+{
+	margin-top: 0;
+	margin-right: 1.5em; /* 36px/16px */
+	word-wrap: break-word;
+}
+
+p:last-child
+{
+	margin-bottom: 0;
+}
+
+
+.user, [itemprop='mention']
+{
+	font-size: 0.75em; /* 12px/16px */
+	text-decoration: none;
+	color: white;
+	background-color: #aaa;
+	padding: 0.25em 0.5em; /* 3px/12px 6px/12px */
+	border-radius: 10px;
+	vertical-align: baseline;
+	margin-right: 0.5em; /* 6px/12px */
+}
+
+[itemprop='mention']
+{
+	background-color: rgba(56,146,227,0.73);
+}
+
+[itemprop='mention'] a
+{
+	color: white;
+}
+
+[itemprop='hashtag']
+{
+	background-color: rgba(56,146,227,0.41);
+
+	font-style: italic;
+}
+
+[itemprop='hashtag'] a
+{
+	color: #404040; /* Regular body text color */
+}
+
+[itemprop='mention'], [itemprop='hashtag']
+{
+	/* Don’t break mentions or hashtags */
+	-webkit-hyphens: manual;
+	-moz-hyphens: manual;
+	hyphens: manual;
+
+}
+
+.error
+{
+	background-color: transparent;
+	color: red;
+}
+
+@media all and (max-width:512px)
+{
+	html {
+		padding: 0 12px;
+	}
+
+	body {
+		font-size:14px;
+	}
+
+	h1
+	{
+		font-size:1.8em;
+	}
+}
