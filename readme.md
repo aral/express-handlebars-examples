@@ -11,3 +11,5 @@ Getting Started
 1. Clone the repository
 2. ```npm install```
 3. ```npm start```
+
+Then, [go check out Tally](https://github.com/aral/tally) to see what a breath of fresh air a simple, unobtrusive, and design‐led template system can be ;)
